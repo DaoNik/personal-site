@@ -14,7 +14,8 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "paths": {
-      "@daonik-blog/ui": ["./libs/ui/src/index.ts"]
+      "@daonik-blog/client-shared": ["./libs/client-shared/src/index.ts"],
+      "@daonik-blog/client-features": ["./libs/client-features/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
