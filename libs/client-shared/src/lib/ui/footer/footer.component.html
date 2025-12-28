@@ -1,0 +1,23 @@
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-brand">
+      <div class="monogram">DN</div>
+      <div>
+        <p class="brand-title">Daonik</p>
+        <p class="brand-sub">Создаю спокойные цифровые продукты</p>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      @for (link of navLinks; track link.path) {
+        <a [routerLink]="link.path" class="footer-link">{{ link.label }}</a>
+      }
+    </div>
+
+    <div class="footer-meta">
+      <span>© 2025</span>
+      <span class="dot">•</span>
+      <span>Работа с намерением</span>
+    </div>
+  </div>
+</footer>

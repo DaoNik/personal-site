@@ -1,0 +1,36 @@
+<nav class="header">
+  <div class="container header-content">
+    <a routerLink="/" class="logo">Daonik</a>
+
+    <div class="nav-items">
+      @for (link of navLinks; track link.path) {
+        <a
+          [routerLink]="link.path"
+          routerLinkActive="active"
+          class="nav-link"
+          >{{ link.label }}</a
+        >
+      }
+      <button class="btn-natural btn-primary">Связаться</button>
+    </div>
+
+    <button class="mobile-menu-btn" (click)="toggleMobile()">
+      <lucide-angular [img]="mobileOpen ? XIcon : MenuIcon" [size]="24" />
+    </button>
+  </div>
+
+  @if (mobileOpen) {
+    <div class="mobile-nav">
+      @for (link of navLinks; track link.path) {
+        <a
+          [routerLink]="link.path"
+          routerLinkActive="active"
+          class="mobile-link"
+          (click)="closeMobile()"
+          >{{ link.label }}</a
+        >
+      }
+      <button class="btn-natural btn-primary mobile-cta">Связаться</button>
+    </div>
+  }
+</nav>
