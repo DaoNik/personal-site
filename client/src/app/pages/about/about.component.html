@@ -1,0 +1,93 @@
+<section class="about-page">
+  <div class="container">
+    <div class="hero natural-card">
+      <div class="hero-text">
+        <p class="eyebrow">О себе</p>
+        <h1>Никита — фронтенд-разработчик</h1>
+        <p class="lede">
+          Строю понятные цифровые продукты, соединяя дизайн-системы и
+          производительный код. Верю в спокойные интерфейсы, чёткие процессы и
+          бережное отношение к вниманию пользователя.
+        </p>
+        <div class="hero-tags">
+          <span class="tag">Дизайн-системы</span>
+          <span class="tag">Angular / Nest</span>
+          <span class="tag">UX-исследования</span>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <div class="portrait-frame">
+          <div class="portrait-glow"></div>
+          <div class="portrait-initials">DN</div>
+          <p class="portrait-caption">
+            Смотрю на продукты через призму внимания пользователя и целей
+            бизнеса.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-grid">
+      <div class="section-block natural-card">
+        <div class="section-header">
+          <p class="eyebrow">Подход</p>
+          <h2>Что ведёт мои проекты</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-card" *ngFor="let value of values">
+            <h3>{{ value.title }}</h3>
+            <p>{{ value.description }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block natural-card">
+        <div class="section-header">
+          <p class="eyebrow">Опыт</p>
+          <h2>Маршрут в профессии</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item" *ngFor="let item of timeline">
+            <div class="timeline-meta">
+              <span class="timeline-period">{{ item.period }}</span>
+              <span class="timeline-place">{{ item.place }}</span>
+            </div>
+            <h3 class="timeline-role">{{ item.role }}</h3>
+            <p class="timeline-focus">{{ item.focus }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tools natural-card">
+      <div class="section-header">
+        <p class="eyebrow">Инструменты</p>
+        <h2>Чем пользуюсь ежедневно</h2>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-group" *ngFor="let group of tools">
+          <h3>{{ group.title }}</h3>
+          <ul>
+            <li *ngFor="let tool of group.items">{{ tool }}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cta">
+        <div>
+          <p class="eyebrow">Сотрудничество</p>
+          <h3>Нужен системный взгляд на продукт?</h3>
+          <p class="lede">
+            Могу помочь собрать дизайн-систему, настроить процессы или запустить
+            новые интерфейсы без перегрузки команды.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a routerLink="/work" class="btn-natural btn-primary">Портфолио</a>
+          <a routerLink="/notes" class="btn-natural btn-secondary"
+            >Смотреть подход</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

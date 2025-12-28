@@ -11,3 +11,9 @@
 - If the user needs help with an Nx configuration or project graph error, use the `nx_workspace` tool to get any errors
 
 <!-- nx configuration end-->
+
+# Client Code Guidelines
+
+- Use Angular control flow syntax (`@if`, `@for`, `@switch`) instead of legacy structural directives where possible.
+- Follow feature-based architecture aligned with Nx libraries (separate features, shared UI, etc.) when adding or moving client code.
+- If anything about scope or implementation is unclear, ask clarifying questions before making changes.
