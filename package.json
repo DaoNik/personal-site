@@ -2,7 +2,19 @@
   "name": "@daonik-blog/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "nx": "nx",
+    "start:client": "nx serve client",
+    "start:server": "nx serve server",
+    "build:client": "nx build client",
+    "build:server": "nx build server",
+    "test:client": "nx test client",
+    "test:server": "nx test server",
+    "lint:client": "nx lint client",
+    "lint:server": "nx lint server",
+    "e2e:client": "nx e2e client-e2e",
+    "e2e:server": "nx e2e server-e2e"
+  },
   "private": true,
   "devDependencies": {
     "@analogjs/vite-plugin-angular": "~1.19.1",

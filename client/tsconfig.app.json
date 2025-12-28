@@ -6,8 +6,8 @@
   },
   "include": [
     "src/**/*.ts",
-    "../libs-client/shared/src/lib/ui/header/header.component.ts",
-    "../libs-client/shared/src/lib/ui/footer/footer.component.ts",
+    "../libs/client-shared/src/lib/ui/header/header.component.ts",
+    "../libs/client-shared/src/lib/ui/footer/footer.component.ts",
     "../libs/client-shared/src/lib/ui/stats-card/stats-card.component.ts"
   ],
   "exclude": [

@@ -1,7 +1,7 @@
 {
   "name": "features",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs-client/features/src",
+  "sourceRoot": "libs/client-features/src",
   "prefix": "lib",
   "projectType": "library",
   "tags": [],

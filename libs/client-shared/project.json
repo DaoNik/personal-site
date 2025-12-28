@@ -1,7 +1,7 @@
 {
   "name": "shared",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs-client/shared/src",
+  "sourceRoot": "libs/client-shared/src",
   "prefix": "lib",
   "projectType": "library",
   "tags": [],

@@ -1,0 +1,39 @@
+<!-- eslint-disable @angular-eslint/template/elements-content -->
+<div class="hero-slider">
+  <div class="embla" #emblaRef>
+    <div class="embla__container">
+      <div class="embla__slide" *ngFor="let slide of slides">
+        <div
+          class="slide-image"
+          [style.backgroundImage]="'url(' + slide.image + ')'"
+        ></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div class="container">
+            <span class="slide-badge">{{ slide.badge || 'Featured' }}</span>
+            <h2 class="slide-title">{{ slide.title }}</h2>
+            <p class="slide-desc">{{ slide.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-controls">
+    <button class="control-btn" (click)="scrollPrev()">
+      <lucide-angular [img]="ChevronLeftIcon" [size]="20"></lucide-angular>
+    </button>
+    <button class="control-btn" (click)="scrollNext()">
+      <lucide-angular [img]="ChevronRightIcon" [size]="20"></lucide-angular>
+    </button>
+  </div>
+
+  <div class="slider-dots">
+    <button
+      *ngFor="let slide of slides; let i = index"
+      class="dot"
+      [class.active]="selectedIndex === i"
+      (click)="scrollTo(i)"
+    ></button>
+  </div>
+</div>

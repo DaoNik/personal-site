@@ -1,0 +1,69 @@
+<section class="home-page">
+  <div class="container">
+    <app-hero-slider [slides]="featuredSlides"></app-hero-slider>
+
+    <div class="intro-section">
+      <div class="intro-content">
+        <div class="intro-avatar">
+          <div class="avatar-placeholder">DN</div>
+        </div>
+        <div class="intro-text">
+          <h1 class="intro-greeting">Привет, меня зовут Никита</h1>
+          <p class="intro-bio">
+            Веб-разработчик, создающий осознанные цифровые опыты, которые
+            почитают простоту, ясность и естественный мир.
+          </p>
+          <div class="intro-actions">
+            <a routerLink="/work" class="btn-natural btn-primary btn-with-icon">
+              Смотреть работы
+              <lucide-angular
+                [img]="ArrowRightIcon"
+                [size]="16"
+              ></lucide-angular>
+            </a>
+            <a routerLink="/blog" class="btn-natural btn-secondary"
+              >Читать журнал</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-section">
+      <div class="stats-grid">
+        <lib-stats-card
+          value="12+"
+          label="Системы проектирования"
+          icon="layers"
+        ></lib-stats-card>
+        <lib-stats-card
+          value="5 лет"
+          label="Опыт"
+          icon="coffee"
+        ></lib-stats-card>
+        <lib-stats-card
+          value="24"
+          label="Цифровые продукты"
+          icon="smartphone"
+        ></lib-stats-card>
+      </div>
+    </div>
+
+    <div class="blog-section">
+      <div class="section-header">
+        <h2>Последнее из журнала</h2>
+        <a routerLink="/blog" class="view-all-link">Все записи →</a>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card natural-card" *ngFor="let log of latestLogs">
+          <div class="blog-meta">
+            <span class="blog-date">{{ log.date }}</span>
+            <span class="blog-tag">{{ log.tag }}</span>
+          </div>
+          <h3 class="blog-title">{{ log.title }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

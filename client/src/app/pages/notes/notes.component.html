@@ -1,0 +1,30 @@
+<section class="notes-page">
+  <div class="container">
+    <div class="page-header">
+      <h1>База знаний</h1>
+      <p class="page-intro">Цифровой сад идей, ресурсов и знаний.</p>
+    </div>
+
+    <div class="categories">
+      <button
+        class="category-btn"
+        *ngFor="let cat of categories"
+        [class.active]="activeCategory === cat"
+        (click)="activeCategory = cat"
+      >
+        {{ cat }}
+      </button>
+    </div>
+
+    <div class="notes-grid">
+      <div class="note-card natural-card" *ngFor="let note of filteredNotes">
+        <span class="note-category">{{ note.category }}</span>
+        <h3 class="note-title">{{ note.title }}</h3>
+        <p class="note-preview">{{ note.preview }}</p>
+        <div class="note-footer">
+          <span class="note-date">Обновлено {{ note.updated }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

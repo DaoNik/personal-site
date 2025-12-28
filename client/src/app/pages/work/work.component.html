@@ -1,0 +1,25 @@
+<section class="work-page">
+  <div class="container">
+    <div class="page-header">
+      <h1>Выбранные работы</h1>
+      <p class="page-intro">
+        Тщательно подобранная коллекция проектов, исследующих пересечение
+        дизайна, технологии и осознанной жизни.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card natural-card" *ngFor="let project of projects">
+        <div
+          class="project-image"
+          [style.backgroundImage]="'url(' + project.image + ')'"
+        ></div>
+        <div class="project-content">
+          <span class="project-category">{{ project.category }}</span>
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-desc">{{ project.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
