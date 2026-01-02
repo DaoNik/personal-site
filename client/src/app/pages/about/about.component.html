@@ -2,17 +2,19 @@
   <div class="container">
     <div class="page-header">
       <h1>О себе</h1>
-      <p class="page-intro">Строю понятные цифровые продукты, соединяя дизайн-системы и
-      производительный код.</p>
+      <p class="page-intro">
+        Строю понятные цифровые продукты, соединяя дизайн-системы и
+        производительный код.
+      </p>
     </div>
 
     <div class="hero natural-card">
       <div class="hero-text">
         <h2>Никита — фронтенд-разработчик</h2>
         <p class="lede">
-          Смотрю на продукты через призму системной архитектуры и целей
-          бизнеса. Верю в спокойные интерфейсы, чёткие процессы и
-          бережное отношение к вниманию пользователя.
+          Смотрю на продукты через призму системной архитектуры и целей бизнеса.
+          Верю в спокойные интерфейсы, чёткие процессы и бережное отношение к
+          вниманию пользователя.
         </p>
         <div class="hero-tags">
           <span class="tag">Дизайн-системы</span>
@@ -29,10 +31,12 @@
           <h2>Что ведёт мои проекты</h2>
         </div>
         <div class="values-grid">
-          <div class="value-card" *ngFor="let value of values">
+          @for (value of values; track value) {
+          <div class="value-card">
             <h3>{{ value.title }}</h3>
             <p>{{ value.description }}</p>
           </div>
+          }
         </div>
       </div>
 
@@ -42,7 +46,8 @@
           <h2>Маршрут в профессии</h2>
         </div>
         <div class="timeline">
-          <div class="timeline-item" *ngFor="let item of timeline">
+          @for (item of timeline; track item) {
+          <div class="timeline-item">
             <div class="timeline-meta">
               <span class="timeline-period">{{ item.period }}</span>
               <span class="timeline-place">{{ item.place }}</span>
@@ -50,6 +55,7 @@
             <h3 class="timeline-role">{{ item.role }}</h3>
             <p class="timeline-focus">{{ item.focus }}</p>
           </div>
+          }
         </div>
       </div>
     </div>
@@ -60,12 +66,16 @@
         <h2>Чем пользуюсь ежедневно</h2>
       </div>
       <div class="tools-grid">
-        <div class="tool-group" *ngFor="let group of tools">
+        @for (group of tools; track group) {
+        <div class="tool-group">
           <h3>{{ group.title }}</h3>
           <ul>
-            <li *ngFor="let tool of group.items">{{ tool }}</li>
+            @for (tool of group.items; track tool) {
+            <li>{{ tool }}</li>
+            }
           </ul>
         </div>
+        }
       </div>
       <div class="cta">
         <div class="cta-content">

@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-notes',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './notes.component.html',
   styleUrl: './notes.component.scss',
 })
 export class NotesComponent {
-  categories = ['Все', 'Дизайн', 'Код', 'Инструменты', 'Процесс'];
+  categories = ['Все', 'Дизайн', 'Код', 'Инструменты', 'Процессы'];
   activeCategory = 'Все';
 
   notes = [

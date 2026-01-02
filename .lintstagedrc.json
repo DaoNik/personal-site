@@ -1,0 +1,6 @@
+{
+  "*.{ts,tsx,js,jsx}": ["./node_modules/.bin/eslint --fix", "nx format:write"],
+  "*.html": ["./node_modules/.bin/eslint --fix", "nx format:write"],
+  "*.json": ["nx format:write"],
+  "*.md": ["nx format:write"]
+}

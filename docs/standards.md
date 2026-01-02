@@ -1,7 +1,7 @@
 # Стандарты кода
 
 - Общие: придерживаться eslint/prettier настроек, запускать через Nx (`nx lint <project>`). Именования — говорящие, kebab-case для файлов/папок, PascalCase для компонентов/классов.
-- Angular (TS/HTML/SCSS): standalone компоненты, `ChangeDetectionStrategy.OnPush` по умолчанию, control-flow (`@if/@for/@switch`) вместо устаревших структур. Общие UI — в `client-shared`, фичи — в `client-features`. Стили: локальные scss рядом, глобальные переменные/токены — в `styles.scss`.
+- Angular (TS/HTML/SCSS): standalone компоненты, `ChangeDetectionStrategy.OnPush` по умолчанию, control-flow (`@if/@for/@switch`) вместо устаревших структур. Общие UI — в `client-shared`, фичи — в `client-features`. Стили: локальные scss рядом, глобальные переменные/токены — в `styles.scss`. В названиях файлов всегда прописывай тип файла (например, `component.ts`, `service.ts`, `module.ts`, `component.html`, `component.scss`)
 - Nest (TS): контроллеры/сервисы мелкие и явные DTO/интерфейсы; общие контракты дублировать в shared-моделях для фронта и бэка. Логика — сервисы, контроллеры тонкие. Следовать eslint правилам.
 - Форматирование: `prettier` по умолчанию, не отключать без причины. Проверять импорт-пути — использовать алиасы из `tsconfig.base.json`.
 - Стилизация: использовать BEM-нотацию для классов, локальные стили в компонентах, глобальные стили в `styles.scss`, единые точки перехода из `variables.scss`, использовать единую цветовую палитру из `styles.scss`.

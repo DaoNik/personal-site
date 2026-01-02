@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-work',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './work.component.html',
   styleUrl: './work.component.scss',
 })

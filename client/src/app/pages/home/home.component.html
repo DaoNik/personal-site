@@ -56,13 +56,15 @@
       </div>
 
       <div class="blog-grid">
-        <div class="blog-card natural-card" *ngFor="let log of latestLogs">
+        @for (log of latestLogs; track log) {
+        <div class="blog-card natural-card">
           <div class="blog-meta">
             <span class="blog-date">{{ log.date }}</span>
             <span class="blog-tag">{{ log.tag }}</span>
           </div>
           <h3 class="blog-title">{{ log.title }}</h3>
         </div>
+        }
       </div>
     </div>
   </div>

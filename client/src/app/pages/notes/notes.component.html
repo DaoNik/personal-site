@@ -6,18 +6,20 @@
     </div>
 
     <div class="categories">
+      @for (cat of categories; track cat) {
       <button
         class="category-btn"
-        *ngFor="let cat of categories"
         [class.active]="activeCategory === cat"
         (click)="activeCategory = cat"
       >
         {{ cat }}
       </button>
+      }
     </div>
 
     <div class="notes-grid">
-      <div class="note-card natural-card" *ngFor="let note of filteredNotes">
+      @for (note of filteredNotes; track note) {
+      <div class="note-card natural-card">
         <span class="note-category">{{ note.category }}</span>
         <h3 class="note-title">{{ note.title }}</h3>
         <p class="note-preview">{{ note.preview }}</p>
@@ -25,6 +27,7 @@
           <span class="note-date">Обновлено {{ note.updated }}</span>
         </div>
       </div>
+      }
     </div>
   </div>
 </section>

@@ -2,7 +2,8 @@
 <div class="hero-slider">
   <div class="embla" #emblaRef>
     <div class="embla__container">
-      <div class="embla__slide" *ngFor="let slide of slides">
+      @for (slide of slides; track slide) {
+      <div class="embla__slide">
         <div
           class="slide-image"
           [style.backgroundImage]="'url(' + slide.image + ')'"
@@ -16,6 +17,7 @@
           </div>
         </div>
       </div>
+      }
     </div>
   </div>
 
@@ -29,11 +31,12 @@
   </div>
 
   <div class="slider-dots">
+    @for (slide of slides; track slide; let i = $index) {
     <button
-      *ngFor="let slide of slides; let i = index"
       class="dot"
       [class.active]="selectedIndex === i"
       (click)="scrollTo(i)"
     ></button>
+    }
   </div>
 </div>

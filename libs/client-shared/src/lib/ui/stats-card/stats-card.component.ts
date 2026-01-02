@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import {
   LucideAngularModule,
   Coffee,
@@ -11,7 +11,7 @@ import {
 @Component({
   selector: 'lib-stats-card',
   standalone: true,
-  imports: [CommonModule, LucideAngularModule],
+  imports: [LucideAngularModule],
   templateUrl: './stats-card.component.html',
   styleUrls: ['./stats-card.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

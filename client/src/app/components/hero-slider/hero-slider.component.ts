@@ -6,7 +6,7 @@ import {
   ElementRef,
   OnDestroy,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { LucideAngularModule, ChevronLeft, ChevronRight } from 'lucide-angular';
 import EmblaCarousel, { EmblaCarouselType } from 'embla-carousel';
 
@@ -21,7 +21,7 @@ export interface Slide {
 @Component({
   selector: 'app-hero-slider',
   standalone: true,
-  imports: [CommonModule, LucideAngularModule],
+  imports: [LucideAngularModule],
   templateUrl: './hero-slider.component.html',
   styleUrls: ['./hero-slider.component.scss'],
 })

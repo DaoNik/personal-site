@@ -9,7 +9,8 @@
     </div>
 
     <div class="projects-grid">
-      <div class="project-card natural-card" *ngFor="let project of projects">
+      @for (project of projects; track project) {
+      <div class="project-card natural-card">
         <div
           class="project-image"
           [style.backgroundImage]="'url(' + project.image + ')'"
@@ -20,6 +21,7 @@
           <p class="project-desc">{{ project.description }}</p>
         </div>
       </div>
+      }
     </div>
   </div>
 </section>
