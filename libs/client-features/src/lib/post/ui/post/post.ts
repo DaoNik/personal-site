@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
         <h2>Новый пост</h2>
         <p class="lede">
           Короткое описание поста. Замените содержимое на реальные данные или
-          передайте через @Input.
+          передайте через &#64;Input.
         </p>
       </header>
     </article>

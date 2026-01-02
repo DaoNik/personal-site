@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',
 })
@@ -18,7 +19,7 @@ export class AboutComponent {
     {
       title: 'Ясность интерфейсов',
       description:
-        'Чёткая иерархия, экономия когнитивных усилий, щадящее уведомление пользователя.',
+        'Чёткая структура, экономия когнитивных усилий, щадящее уведомление пользователя.',
     },
     {
       title: 'Экология кода',
@@ -30,36 +31,48 @@ export class AboutComponent {
   timeline = [
     {
       period: '2024 — сейчас',
-      role: 'Product дизайнер / Frontend',
-      place: 'Фриланс / студии',
-      focus: 'Дизайн-системы, интерфейсы и сборка фронтенда на Angular.',
-    },
-    {
-      period: '2021 — 2024',
-      role: 'UX/UI дизайнер',
-      place: 'Продуктовые компании',
-      focus: 'Исследования, CJM, прототипы, запуск мобильных и web-фич.',
-    },
-    {
-      period: '2019 — 2021',
       role: 'Frontend разработчик',
-      place: 'Аутсорс',
-      focus: 'SPA на Angular/React, оптимизация производительности и DX.',
+      place: 'Удаленная работа/Банковский сектор',
+      focus:
+        'Дизайн-системы, интерфейсы, налаживание бизнес-процессов внутри команды и создание фронтенда на Angular/чистом JavaScript.',
+    },
+    {
+      period: '2022 — 2024',
+      role: 'Fullstack разработчик - Angular/Golang',
+      place: 'Удаленная работа/Маркетплейс/Складская логистика',
+      focus:
+        'Переработка легаси проекта складской логистики на современные технологии, в соответствии с требованиями бизнеса, безопасности, стабильности и производительности.',
+    },
+    {
+      period: '2021 — 2022',
+      role: 'Студент Я.Практикум',
+      place: 'Удаленное обучение параллельно со службой в армии',
+      focus:
+        'SPA на чистом js/React, изучение вёрстки, написание кода на js, базовое изучение Node.js/Express',
     },
   ];
 
   tools = [
     {
-      title: 'Дизайн и системы',
-      items: ['Figma', 'Design tokens', 'Component libraries', 'CJM/Flow'],
+      title: 'Дизайн-системы',
+      items: ['Figma', 'Custom component libraries', 'User Flow'],
     },
     {
       title: 'Frontend стек',
-      items: ['Angular', 'NestJS', 'TypeScript', 'Vite', 'Nx'],
+      items: ['Angular', 'Pug', 'TypeScript', 'Vite', 'Nx', 'Storybook'],
+    },
+    {
+      title: 'Backend стек',
+      items: ['Node.js', 'Express', 'Nest.js', 'MongoDB'],
     },
     {
       title: 'Практики',
-      items: ['Discovery → Delivery', 'Accessible by default', 'Perf budgets'],
+      items: [
+        'Desktop First',
+        'Module Architecture',
+        'Onion Architecture',
+        'Lighthouse budgets',
+      ],
     },
   ];
 }
