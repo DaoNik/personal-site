@@ -1,0 +1,163 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FooterComponent > should match snapshot 1`] = `
+<div
+  id="root1"
+  ng-version="20.3.15"
+>
+  <footer
+    class="footer"
+  >
+    <div
+      class="container footer-content"
+    >
+      <div
+        class="footer-brand"
+      >
+        <div
+          class="monogram"
+        >
+          DN
+        </div>
+        <div>
+          <p
+            class="brand-title"
+          >
+            Daonik
+          </p>
+          <p
+            class="brand-sub"
+          >
+            Создаю качественное ПО
+          </p>
+        </div>
+      </div>
+      <div
+        class="footer-links"
+      >
+        <a
+          class="footer-link"
+          href="/work"
+        >
+          Работы
+        </a>
+        <a
+          class="footer-link"
+          href="/blog"
+        >
+          Блог
+        </a>
+        <a
+          class="footer-link"
+          href="/notes"
+        >
+          Статьи
+        </a>
+        <a
+          class="footer-link"
+          href="/about"
+        >
+          О себе
+        </a>
+        <!--container-->
+      </div>
+      <div
+        class="footer-meta"
+      >
+        <span>
+          © 2025
+        </span>
+        <span
+          class="dot"
+        >
+          •
+        </span>
+        <span>
+          Работа с перспективой
+        </span>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`FooterComponent > совпадает со снапшотом 1`] = `
+<div
+  id="root1"
+  ng-version="20.3.15"
+>
+  <footer
+    class="footer"
+  >
+    <div
+      class="container footer-content"
+    >
+      <div
+        class="footer-brand"
+      >
+        <div
+          class="monogram"
+        >
+          DN
+        </div>
+        <div>
+          <p
+            class="brand-title"
+          >
+            Daonik
+          </p>
+          <p
+            class="brand-sub"
+          >
+            Создаю качественное ПО
+          </p>
+        </div>
+      </div>
+      <div
+        class="footer-links"
+      >
+        <a
+          class="footer-link"
+          href="/work"
+        >
+          Работы
+        </a>
+        <a
+          class="footer-link"
+          href="/blog"
+        >
+          Блог
+        </a>
+        <a
+          class="footer-link"
+          href="/notes"
+        >
+          Статьи
+        </a>
+        <a
+          class="footer-link"
+          href="/about"
+        >
+          О себе
+        </a>
+        <!--container-->
+      </div>
+      <div
+        class="footer-meta"
+      >
+        <span>
+          © 2025
+        </span>
+        <span
+          class="dot"
+        >
+          •
+        </span>
+        <span>
+          Работа с перспективой
+        </span>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

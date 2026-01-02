@@ -1,5 +1,5 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
 import { RouterLink } from '@angular/router';
 import { LucideAngularModule, ArrowRight } from 'lucide-angular';
 import {
@@ -12,6 +12,7 @@ import { StatsCardComponent } from '@daonik-blog/client-shared';
   selector: 'app-home',
   standalone: true,
   imports: [
+    CommonModule,
     RouterLink,
     LucideAngularModule,
     HeroSliderComponent,

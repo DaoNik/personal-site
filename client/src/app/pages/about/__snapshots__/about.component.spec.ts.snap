@@ -1,0 +1,375 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AboutComponent > should match snapshot 1`] = `
+<div
+  id="root1"
+  ng-version="20.3.15"
+>
+  <section
+    class="about-page"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="page-header"
+      >
+        <h1>
+          О себе
+        </h1>
+        <p
+          class="page-intro"
+        >
+           Строю понятные цифровые продукты, соединяя дизайн-системы и производительный код. 
+        </p>
+      </div>
+      <div
+        class="hero natural-card"
+      >
+        <div
+          class="hero-text"
+        >
+          <h2>
+            Никита — фронтенд-разработчик
+          </h2>
+          <p
+            class="lede"
+          >
+             Смотрю на продукты через призму системной архитектуры и целей бизнеса. Верю в спокойные интерфейсы, чёткие процессы и бережное отношение к вниманию пользователя. 
+          </p>
+          <div
+            class="hero-tags"
+          >
+            <span
+              class="tag"
+            >
+              Дизайн-системы
+            </span>
+            <span
+              class="tag"
+            >
+              Angular / Nest
+            </span>
+            <span
+              class="tag"
+            >
+              UX-исследования
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section-grid"
+      >
+        <div
+          class="section-block natural-card"
+        >
+          <div
+            class="section-header"
+          >
+            <p
+              class="eyebrow"
+            >
+              Подход
+            </p>
+            <h2>
+              Что ведёт мои проекты
+            </h2>
+          </div>
+          <div
+            class="values-grid"
+          >
+            <div
+              class="value-card"
+            >
+              <h3>
+                Осознанный темп
+              </h3>
+              <p>
+                Проекты без спешки: прозрачные фазы, контрольные точки и дыхание между ними.
+              </p>
+            </div>
+            <div
+              class="value-card"
+            >
+              <h3>
+                Ясность интерфейсов
+              </h3>
+              <p>
+                Чёткая структура, экономия когнитивных усилий, щадящее уведомление пользователя.
+              </p>
+            </div>
+            <div
+              class="value-card"
+            >
+              <h3>
+                Экология кода
+              </h3>
+              <p>
+                Дизайн-системы, переиспользуемые блоки и бережное отношение к производительности.
+              </p>
+            </div>
+            <!--container-->
+          </div>
+        </div>
+        <div
+          class="section-block natural-card"
+        >
+          <div
+            class="section-header"
+          >
+            <p
+              class="eyebrow"
+            >
+              Опыт
+            </p>
+            <h2>
+              Маршрут в профессии
+            </h2>
+          </div>
+          <div
+            class="timeline"
+          >
+            <div
+              class="timeline-item"
+            >
+              <div
+                class="timeline-meta"
+              >
+                <span
+                  class="timeline-period"
+                >
+                  2024 — сейчас
+                </span>
+                <span
+                  class="timeline-place"
+                >
+                  Удаленная работа/Банковский сектор
+                </span>
+              </div>
+              <h3
+                class="timeline-role"
+              >
+                Frontend разработчик
+              </h3>
+              <p
+                class="timeline-focus"
+              >
+                Дизайн-системы, интерфейсы, налаживание бизнес-процессов внутри команды и создание фронтенда на Angular/чистом JavaScript.
+              </p>
+            </div>
+            <div
+              class="timeline-item"
+            >
+              <div
+                class="timeline-meta"
+              >
+                <span
+                  class="timeline-period"
+                >
+                  2022 — 2024
+                </span>
+                <span
+                  class="timeline-place"
+                >
+                  Удаленная работа/Маркетплейс/Складская логистика
+                </span>
+              </div>
+              <h3
+                class="timeline-role"
+              >
+                Fullstack разработчик - Angular/Golang
+              </h3>
+              <p
+                class="timeline-focus"
+              >
+                Переработка легаси проекта складской логистики на современные технологии, в соответствии с требованиями бизнеса, безопасности, стабильности и производительности.
+              </p>
+            </div>
+            <div
+              class="timeline-item"
+            >
+              <div
+                class="timeline-meta"
+              >
+                <span
+                  class="timeline-period"
+                >
+                  2021 — 2022
+                </span>
+                <span
+                  class="timeline-place"
+                >
+                  Удаленное обучение параллельно со службой в армии
+                </span>
+              </div>
+              <h3
+                class="timeline-role"
+              >
+                Студент Я.Практикум
+              </h3>
+              <p
+                class="timeline-focus"
+              >
+                SPA на чистом js/React, изучение вёрстки, написание кода на js, базовое изучение Node.js/Express
+              </p>
+            </div>
+            <!--container-->
+          </div>
+        </div>
+      </div>
+      <div
+        class="tools natural-card"
+      >
+        <div
+          class="section-header"
+        >
+          <p
+            class="eyebrow"
+          >
+            Инструменты
+          </p>
+          <h2>
+            Чем пользуюсь ежедневно
+          </h2>
+        </div>
+        <div
+          class="tools-grid"
+        >
+          <div
+            class="tool-group"
+          >
+            <h3>
+              Дизайн-системы
+            </h3>
+            <ul>
+              <li>
+                Figma
+              </li>
+              <li>
+                Custom component libraries
+              </li>
+              <li>
+                User Flow
+              </li>
+              <!--container-->
+            </ul>
+          </div>
+          <div
+            class="tool-group"
+          >
+            <h3>
+              Frontend стек
+            </h3>
+            <ul>
+              <li>
+                Angular
+              </li>
+              <li>
+                Pug
+              </li>
+              <li>
+                TypeScript
+              </li>
+              <li>
+                Vite
+              </li>
+              <li>
+                Nx
+              </li>
+              <li>
+                Storybook
+              </li>
+              <!--container-->
+            </ul>
+          </div>
+          <div
+            class="tool-group"
+          >
+            <h3>
+              Backend стек
+            </h3>
+            <ul>
+              <li>
+                Node.js
+              </li>
+              <li>
+                Express
+              </li>
+              <li>
+                Nest.js
+              </li>
+              <li>
+                MongoDB
+              </li>
+              <!--container-->
+            </ul>
+          </div>
+          <div
+            class="tool-group"
+          >
+            <h3>
+              Практики
+            </h3>
+            <ul>
+              <li>
+                Desktop First
+              </li>
+              <li>
+                Module Architecture
+              </li>
+              <li>
+                Onion Architecture
+              </li>
+              <li>
+                Lighthouse budgets
+              </li>
+              <!--container-->
+            </ul>
+          </div>
+          <!--container-->
+        </div>
+        <div
+          class="cta"
+        >
+          <div
+            class="cta-content"
+          >
+            <p
+              class="eyebrow"
+            >
+              Сотрудничество
+            </p>
+            <h3>
+              Нужен системный взгляд на продукт?
+            </h3>
+            <p
+              class="lede"
+            >
+               Могу помочь собрать дизайн-систему, настроить процессы или запустить новые интерфейсы без перегрузки команды. 
+            </p>
+          </div>
+          <div
+            class="cta-actions"
+          >
+            <a
+              class="btn-natural btn-primary"
+              href="/work"
+              routerlink="/work"
+            >
+              Портфолио
+            </a>
+            <a
+              class="btn-natural btn-secondary"
+              href="/notes"
+              routerlink="/notes"
+            >
+              Смотреть подход
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

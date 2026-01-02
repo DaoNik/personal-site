@@ -1,0 +1,95 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HeaderComponent > should match snapshot 1`] = `
+<div
+  id="root1"
+  ng-version="20.3.15"
+>
+  <nav
+    class="header"
+  >
+    <div
+      class="container header-content"
+    >
+      <a
+        class="logo"
+        href="/"
+        routerlink="/"
+      >
+        Daonik
+      </a>
+      <div
+        class="nav-items"
+      >
+        <a
+          class="nav-link"
+          href="/work"
+          routerlinkactive="active"
+        >
+          Работы
+        </a>
+        <a
+          class="nav-link"
+          href="/blog"
+          routerlinkactive="active"
+        >
+          Блог
+        </a>
+        <a
+          class="nav-link"
+          href="/notes"
+          routerlinkactive="active"
+        >
+          Статьи
+        </a>
+        <a
+          class="nav-link"
+          href="/about"
+          routerlinkactive="active"
+        >
+          О себе
+        </a>
+        <!--container-->
+        <a
+          class="btn-natural btn-primary"
+          href="https://t.me/DaoNik"
+        >
+          Связаться
+        </a>
+      </div>
+      <button
+        class="mobile-menu-btn"
+      >
+        <lucide-angular>
+          <svg
+            class="lucide"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 5h16"
+              key="1tepv9"
+            />
+            <path
+              d="M4 12h16"
+              key="1lakjw"
+            />
+            <path
+              d="M4 19h16"
+              key="1djgab"
+            />
+          </svg>
+        </lucide-angular>
+      </button>
+    </div>
+    <!--container-->
+  </nav>
+</div>
+`;

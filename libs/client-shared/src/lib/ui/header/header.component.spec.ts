@@ -1,21 +1,21 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { App } from './app';
+import { HeaderComponent } from './header.component';
 
-describe('App', () => {
+describe('HeaderComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App, RouterTestingModule],
+      imports: [HeaderComponent, RouterTestingModule],
     }).compileComponents();
   });
 
   it('should create', () => {
-    const fixture = TestBed.createComponent(App);
+    const fixture = TestBed.createComponent(HeaderComponent);
     expect(fixture.componentInstance).toBeTruthy();
   });
 
   it('should match snapshot', () => {
-    const fixture = TestBed.createComponent(App);
+    const fixture = TestBed.createComponent(HeaderComponent);
     fixture.detectChanges();
     expect(fixture.nativeElement).toMatchSnapshot();
   });

@@ -1,0 +1,563 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HomeComponent > should match snapshot 1`] = `
+<div
+  id="root1"
+  ng-version="20.3.15"
+>
+  <section
+    class="home-page"
+  >
+    <div
+      class="container"
+    >
+      <app-hero-slider>
+        <div
+          class="hero-slider"
+        >
+          <div
+            class="embla"
+          >
+            <div
+              class="embla__container"
+            >
+              <div
+                class="embla__slide"
+              >
+                <div
+                  class="slide-image"
+                  style="background-image: url(https://images.unsplash.com/photo-1470058869958-2a77ade41c02?auto=format&fit=crop&w=1200&q=80);"
+                />
+                <div
+                  class="slide-overlay"
+                />
+                <div
+                  class="slide-content"
+                >
+                  <div
+                    class="container"
+                  >
+                    <span
+                      class="slide-badge"
+                    >
+                      Цифровая экология
+                    </span>
+                    <h2
+                      class="slide-title"
+                    >
+                      Органические системы
+                    </h2>
+                    <p
+                      class="slide-desc"
+                    >
+                      Исследование пересечения естественных паттернов и дизайна интерфейсов.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="embla__slide"
+              >
+                <div
+                  class="slide-image"
+                  style="background-image: url(https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80);"
+                />
+                <div
+                  class="slide-overlay"
+                />
+                <div
+                  class="slide-content"
+                >
+                  <div
+                    class="container"
+                  >
+                    <span
+                      class="slide-badge"
+                    >
+                      Цифровое благополучие
+                    </span>
+                    <h2
+                      class="slide-title"
+                    >
+                      Осознанные технологии
+                    </h2>
+                    <p
+                      class="slide-desc"
+                    >
+                      Создание приложений, которые уважают внимание пользователя и способствуют спокойствию.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="embla__slide"
+              >
+                <div
+                  class="slide-image"
+                  style="background-image: url(https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=1200&q=80);"
+                />
+                <div
+                  class="slide-overlay"
+                />
+                <div
+                  class="slide-content"
+                >
+                  <div
+                    class="container"
+                  >
+                    <span
+                      class="slide-badge"
+                    >
+                      Низкоуглеродный код
+                    </span>
+                    <h2
+                      class="slide-title"
+                    >
+                      Устойчивый веб
+                    </h2>
+                    <p
+                      class="slide-desc"
+                    >
+                      Оптимизация производительности для снижения цифрового углеродного следа.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--container-->
+            </div>
+          </div>
+          <div
+            class="slider-controls"
+          >
+            <button
+              class="control-btn"
+            >
+              <lucide-angular>
+                <svg
+                  class="lucide"
+                  fill="none"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m15 18-6-6 6-6"
+                    key="1wnfg3"
+                  />
+                </svg>
+              </lucide-angular>
+            </button>
+            <button
+              class="control-btn"
+            >
+              <lucide-angular>
+                <svg
+                  class="lucide"
+                  fill="none"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m9 18 6-6-6-6"
+                    key="mthhwq"
+                  />
+                </svg>
+              </lucide-angular>
+            </button>
+          </div>
+          <div
+            class="slider-dots"
+          >
+            <button
+              class="dot active"
+            />
+            <button
+              class="dot"
+            />
+            <button
+              class="dot"
+            />
+            <!--container-->
+          </div>
+        </div>
+      </app-hero-slider>
+      <div
+        class="intro-section"
+      >
+        <div
+          class="intro-content"
+        >
+          <div
+            class="intro-avatar"
+          >
+            <div
+              class="avatar-placeholder"
+            >
+              DN
+            </div>
+          </div>
+          <div
+            class="intro-text"
+          >
+            <h1
+              class="intro-greeting"
+            >
+              Привет, меня зовут Никита
+            </h1>
+            <p
+              class="intro-bio"
+            >
+               Веб-разработчик, создающий осознанные цифровые опыты, которые почитают простоту, ясность и естественный мир. 
+            </p>
+            <div
+              class="intro-actions"
+            >
+              <a
+                class="btn-natural btn-primary btn-with-icon"
+                href="/work"
+                routerlink="/work"
+              >
+                 Смотреть работы 
+                <lucide-angular>
+                  <svg
+                    class="lucide"
+                    fill="none"
+                    height="16"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 12h14"
+                      key="1ays0h"
+                    />
+                    <path
+                      d="m12 5 7 7-7 7"
+                      key="xquz4c"
+                    />
+                  </svg>
+                </lucide-angular>
+              </a>
+              <a
+                class="btn-natural btn-secondary"
+                href="/blog"
+                routerlink="/blog"
+              >
+                Читать журнал
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="stats-section"
+      >
+        <div
+          class="stats-grid"
+        >
+          <lib-stats-card
+            icon="layers"
+            label="Системы проектирования"
+            value="12+"
+          >
+            <div
+              class="stats-card natural-card"
+            >
+              <div
+                class="icon-wrapper"
+              >
+                <lucide-angular>
+                  <svg
+                    class="lucide"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"
+                      key="zw3jo"
+                    />
+                    <path
+                      d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"
+                      key="1wduqc"
+                    />
+                    <path
+                      d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"
+                      key="kqbvx6"
+                    />
+                  </svg>
+                </lucide-angular>
+              </div>
+              <div
+                class="stats-content"
+              >
+                <div
+                  class="stats-value"
+                >
+                  12+
+                </div>
+                <div
+                  class="stats-label"
+                >
+                  Системы проектирования
+                </div>
+              </div>
+            </div>
+          </lib-stats-card>
+          <lib-stats-card
+            icon="coffee"
+            label="Опыт"
+            value="5 лет"
+          >
+            <div
+              class="stats-card natural-card"
+            >
+              <div
+                class="icon-wrapper"
+              >
+                <lucide-angular>
+                  <svg
+                    class="lucide"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 2v2"
+                      key="7u0qdc"
+                    />
+                    <path
+                      d="M14 2v2"
+                      key="6buw04"
+                    />
+                    <path
+                      d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"
+                      key="pwadti"
+                    />
+                    <path
+                      d="M6 2v2"
+                      key="colzsn"
+                    />
+                  </svg>
+                </lucide-angular>
+              </div>
+              <div
+                class="stats-content"
+              >
+                <div
+                  class="stats-value"
+                >
+                  5 лет
+                </div>
+                <div
+                  class="stats-label"
+                >
+                  Опыт
+                </div>
+              </div>
+            </div>
+          </lib-stats-card>
+          <lib-stats-card
+            icon="smartphone"
+            label="Цифровые продукты"
+            value="24"
+          >
+            <div
+              class="stats-card natural-card"
+            >
+              <div
+                class="icon-wrapper"
+              >
+                <lucide-angular>
+                  <svg
+                    class="lucide"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      height="20"
+                      key="1yt0o3"
+                      rx="2"
+                      ry="2"
+                      width="14"
+                      x="5"
+                      y="2"
+                    />
+                    <path
+                      d="M12 18h.01"
+                      key="mhygvu"
+                    />
+                  </svg>
+                </lucide-angular>
+              </div>
+              <div
+                class="stats-content"
+              >
+                <div
+                  class="stats-value"
+                >
+                  24
+                </div>
+                <div
+                  class="stats-label"
+                >
+                  Цифровые продукты
+                </div>
+              </div>
+            </div>
+          </lib-stats-card>
+        </div>
+      </div>
+      <div
+        class="blog-section"
+      >
+        <div
+          class="section-header"
+        >
+          <h2>
+            Последнее из журнала
+          </h2>
+          <a
+            class="view-all-link"
+            href="/blog"
+            routerlink="/blog"
+          >
+            Все записи →
+          </a>
+        </div>
+        <div
+          class="blog-grid"
+        >
+          <div
+            class="blog-card natural-card"
+          >
+            <div
+              class="blog-meta"
+            >
+              <span
+                class="blog-date"
+              >
+                15 мар
+              </span>
+              <span
+                class="blog-tag"
+              >
+                Размышления
+              </span>
+            </div>
+            <h3
+              class="blog-title"
+            >
+              Искусство медленного кодирования
+            </h3>
+          </div>
+          <div
+            class="blog-card natural-card"
+          >
+            <div
+              class="blog-meta"
+            >
+              <span
+                class="blog-date"
+              >
+                12 мар
+              </span>
+              <span
+                class="blog-tag"
+              >
+                Дизайн
+              </span>
+            </div>
+            <h3
+              class="blog-title"
+            >
+              Проектирование для ясности
+            </h3>
+          </div>
+          <div
+            class="blog-card natural-card"
+          >
+            <div
+              class="blog-meta"
+            >
+              <span
+                class="blog-date"
+              >
+                08 мар
+              </span>
+              <span
+                class="blog-tag"
+              >
+                Образ жизни
+              </span>
+            </div>
+            <h3
+              class="blog-title"
+            >
+              Минималистичная настройка рабочего пространства
+            </h3>
+          </div>
+          <div
+            class="blog-card natural-card"
+          >
+            <div
+              class="blog-meta"
+            >
+              <span
+                class="blog-date"
+              >
+                01 мар
+              </span>
+              <span
+                class="blog-tag"
+              >
+                Рост
+              </span>
+            </div>
+            <h3
+              class="blog-title"
+            >
+              Цифровое садоводство 101
+            </h3>
+          </div>
+          <!--container-->
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
