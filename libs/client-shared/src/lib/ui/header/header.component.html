@@ -13,13 +13,20 @@
       >
     </div>
 
-    <button class="mobile-menu-btn" (click)="toggleMobile()">
+    <button
+      class="mobile-menu-btn"
+      (click)="toggleMobile()"
+      [attr.aria-label]="mobileOpen ? 'Закрыть меню' : 'Открыть меню'"
+      [attr.aria-expanded]="mobileOpen"
+      aria-controls="header-mobile-nav"
+      type="button"
+    >
       <lucide-angular [img]="mobileOpen ? XIcon : MenuIcon" [size]="24" />
     </button>
   </div>
 
   @if (mobileOpen) {
-  <div class="mobile-nav">
+  <div class="mobile-nav" id="header-mobile-nav">
     @for (link of navLinks; track link.path) {
     <a
       [routerLink]="link.path"

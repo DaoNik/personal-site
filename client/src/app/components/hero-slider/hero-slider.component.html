@@ -22,10 +22,20 @@
   </div>
 
   <div class="slider-controls">
-    <button class="control-btn" (click)="scrollPrev()">
+    <button
+      class="control-btn"
+      type="button"
+      aria-label="Предыдущий слайд"
+      (click)="scrollPrev()"
+    >
       <lucide-angular [img]="ChevronLeftIcon" [size]="20"></lucide-angular>
     </button>
-    <button class="control-btn" (click)="scrollNext()">
+    <button
+      class="control-btn"
+      type="button"
+      aria-label="Следующий слайд"
+      (click)="scrollNext()"
+    >
       <lucide-angular [img]="ChevronRightIcon" [size]="20"></lucide-angular>
     </button>
   </div>
@@ -33,8 +43,11 @@
   <div class="slider-dots">
     @for (slide of slides; track slide; let i = $index) {
     <button
+      type="button"
       class="dot"
       [class.active]="selectedIndex === i"
+      [attr.aria-label]="'Перейти к слайду ' + (i + 1)"
+      [attr.aria-pressed]="selectedIndex === i"
       (click)="scrollTo(i)"
     ></button>
     }
