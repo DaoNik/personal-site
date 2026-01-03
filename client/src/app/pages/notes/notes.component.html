@@ -10,7 +10,7 @@
       <button
         class="category-btn"
         [class.active]="activeCategory === cat"
-        (click)="activeCategory = cat"
+        (click)="onCategoryClick(cat)"
       >
         {{ cat }}
       </button>
@@ -18,7 +18,7 @@
     </div>
 
     <div class="notes-grid">
-      @for (note of filteredNotes; track note) {
+      @for (note of notes; track note.id) {
       <div class="note-card natural-card">
         <span class="note-category">{{ note.category }}</span>
         <h3 class="note-title">{{ note.title }}</h3>

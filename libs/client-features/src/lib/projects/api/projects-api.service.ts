@@ -6,7 +6,7 @@ export interface ProjectDTO {
   title: string;
   description: string;
   image: string;
-  badge?: string;
+  category?: string;
 }
 
 @Injectable({
@@ -21,7 +21,7 @@ export class ProjectsApiService {
         'Исследование пересечения естественных паттернов и дизайна интерфейсов.',
       image:
         'https://images.unsplash.com/photo-1470058869958-2a77ade41c02?auto=format&fit=crop&w=1200&q=80',
-      badge: 'Цифровая экология',
+      category: 'Цифровая экология',
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ export class ProjectsApiService {
         'Создание приложений, которые уважают внимание пользователя и способствуют спокойствию.',
       image:
         'https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80',
-      badge: 'Цифровое благополучие',
+      category: 'Цифровое благополучие',
     },
     {
       id: 3,
@@ -39,7 +39,15 @@ export class ProjectsApiService {
         'Оптимизация производительности для снижения цифрового углеродного следа.',
       image:
         'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=1200&q=80',
-      badge: 'Низкоуглеродный код',
+      category: 'Низкоуглеродный код',
+    },
+    {
+      id: 4,
+      title: 'Тихие интерфейсы',
+      category: 'UX дизайн',
+      description: 'Проектирование опытов, которые шепчут, а не кричат.',
+      image:
+        'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80',
     },
   ];
 

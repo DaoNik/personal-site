@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, DestroyRef, inject, OnInit } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+
+import { Note, NotesApiService } from '@daonik-blog/client-features';
 
 @Component({
   selector: 'app-notes',
@@ -7,58 +10,38 @@ import { Component } from '@angular/core';
   templateUrl: './notes.component.html',
   styleUrl: './notes.component.scss',
 })
-export class NotesComponent {
-  categories = ['Все', 'Дизайн', 'Код', 'Инструменты', 'Процессы'];
+export class NotesComponent implements OnInit {
+  private readonly notesApiService = inject(NotesApiService);
+  private readonly destroyRef = inject(DestroyRef);
+
+  categories = ['Все'];
   activeCategory = 'Все';
+  notes: Note[] = [];
 
-  notes = [
-    {
-      id: 1,
-      category: 'Дизайн',
-      title: 'Основы теории цвета',
-      preview:
-        'Понимание того, как цвета взаимодействуют и создают визуальную гармонию.',
-      updated: '10 мар',
-    },
-    {
-      id: 2,
-      category: 'Код',
-      title: 'Советы TypeScript',
-      preview: 'Практические паттерны для написания чистого кода TypeScript.',
-      updated: '8 мар',
-    },
-    {
-      id: 3,
-      category: 'Инструменты',
-      title: 'Горячие клавиши Figma',
-      preview: 'Важные сочетания клавиш для эффективной работы с дизайном.',
-      updated: '5 мар',
-    },
-    {
-      id: 4,
-      category: 'Процесс',
-      title: 'Контрольный список проверки дизайна',
-      preview: 'Ключевые вопросы для задания во время критики дизайна.',
-      updated: '3 мар',
-    },
-    {
-      id: 5,
-      category: 'Дизайн',
-      title: 'Типографическая шкала',
-      preview: 'Создание гармоничных иерархий типов с модульными масштабами.',
-      updated: '28 фев',
-    },
-    {
-      id: 6,
-      category: 'Код',
-      title: 'Паттерны CSS Grid',
-      preview: 'Общие паттерны макета с использованием CSS Grid.',
-      updated: '25 фев',
-    },
-  ];
+  ngOnInit(): void {
+    this.notesApiService
+      .getTags()
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe((tags) => {
+        this.categories.push(...tags);
+      });
+    this.getNotes();
+  }
 
-  get filteredNotes() {
-    if (this.activeCategory === 'Все') return this.notes;
-    return this.notes.filter((n) => n.category === this.activeCategory);
+  onCategoryClick(category: string) {
+    this.activeCategory = category;
+    this.getNotes();
+  }
+
+  private getNotes() {
+    const category =
+      this.activeCategory === 'Все' ? undefined : this.activeCategory;
+
+    this.notesApiService
+      .getNotes(category)
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe((notes) => {
+        this.notes = notes;
+      });
   }
 }
