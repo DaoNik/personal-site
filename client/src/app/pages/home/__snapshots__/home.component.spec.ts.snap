@@ -130,7 +130,9 @@ exports[`HomeComponent > should match snapshot 1`] = `
             class="slider-controls"
           >
             <button
+              aria-label="Предыдущий слайд"
               class="control-btn"
+              type="button"
             >
               <lucide-angular>
                 <svg
@@ -153,7 +155,9 @@ exports[`HomeComponent > should match snapshot 1`] = `
               </lucide-angular>
             </button>
             <button
+              aria-label="Следующий слайд"
               class="control-btn"
+              type="button"
             >
               <lucide-angular>
                 <svg
@@ -180,13 +184,22 @@ exports[`HomeComponent > should match snapshot 1`] = `
             class="slider-dots"
           >
             <button
+              aria-label="Перейти к слайду 1"
+              aria-pressed="true"
               class="dot active"
+              type="button"
             />
             <button
+              aria-label="Перейти к слайду 2"
+              aria-pressed="false"
               class="dot"
+              type="button"
             />
             <button
+              aria-label="Перейти к слайду 3"
+              aria-pressed="false"
               class="dot"
+              type="button"
             />
             <!--container-->
           </div>
