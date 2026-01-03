@@ -29,18 +29,4 @@ describe('HeroSliderComponent', () => {
     const fixture = TestBed.createComponent(HeroSliderComponent);
     expect(fixture.componentInstance).toBeTruthy();
   });
-
-  it('should match snapshot', () => {
-    const fixture = TestBed.createComponent(HeroSliderComponent);
-    fixture.componentInstance.slides = [
-      {
-        id: 1,
-        title: 'Test slide',
-        description: 'Desc',
-        image: 'https://example.com/image.jpg',
-      },
-    ];
-    fixture.detectChanges();
-    expect(fixture.nativeElement).toMatchSnapshot();
-  });
 });

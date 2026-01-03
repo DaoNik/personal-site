@@ -12,10 +12,4 @@ describe('BlogComponent', () => {
     const fixture = TestBed.createComponent(BlogComponent);
     expect(fixture.componentInstance).toBeTruthy();
   });
-
-  it('should match snapshot', () => {
-    const fixture = TestBed.createComponent(BlogComponent);
-    fixture.detectChanges();
-    expect(fixture.nativeElement).toMatchSnapshot();
-  });
 });

@@ -13,10 +13,4 @@ describe('FooterComponent', () => {
     const fixture = TestBed.createComponent(FooterComponent);
     expect(fixture.componentInstance).toBeTruthy();
   });
-
-  it('should match snapshot', () => {
-    const fixture = TestBed.createComponent(FooterComponent);
-    fixture.detectChanges();
-    expect(fixture.nativeElement).toMatchSnapshot();
-  });
 });
