@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PostApiService } from '@daonik-blog/client-features';
 
 @Component({
   selector: 'app-blog',
@@ -9,38 +10,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog.component.scss'],
 })
 export class BlogComponent {
-  posts = [
-    {
-      id: 1,
-      date: '15 марта 2024',
-      category: 'Размышления',
-      title: 'Искусство медленного кодирования',
-      excerpt:
-        'В мире, одержимом скоростью, есть глубокая ценность в замедлении. Умея потратить время на написание вдумчивого, осознанного кода, приводит к лучшим результатам.',
-    },
-    {
-      id: 2,
-      date: '12 марта 2024',
-      category: 'Дизайн',
-      title: 'Проектирование для ясности',
-      excerpt:
-        'Отличный дизайн устраняет препятствия. Когда интерфейсы исчезают на фоне, пользователи могут сосредоточиться на том, что действительно имеет значение.',
-    },
-    {
-      id: 3,
-      date: '08 марта 2024',
-      category: 'Образ жизни',
-      title: 'Минималистичная настройка рабочего пространства',
-      excerpt:
-        'Ваша среда формирует вашу работу. Чистое, осознанное пространство способствует сосредоточенному, творческому мышлению.',
-    },
-    {
-      id: 4,
-      date: '01 марта 2024',
-      category: 'Рост',
-      title: 'Цифровое садоводство 101',
-      excerpt:
-        'Обращение со своей базой знаний как с садом - лелеяние идей со временем, позволяя им расти органически.',
-    },
-  ];
+  private readonly postApiService = inject(PostApiService);
+
+  readonly posts$ = this.postApiService.getPosts();
 }

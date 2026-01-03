@@ -9,14 +9,7 @@ import {
 
 import { LucideAngularModule, ChevronLeft, ChevronRight } from 'lucide-angular';
 import EmblaCarousel, { EmblaCarouselType } from 'embla-carousel';
-
-export interface Slide {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-  badge?: string;
-}
+import { ProjectDTO } from '@daonik-blog/client-features';
 
 @Component({
   selector: 'app-hero-slider',
@@ -26,7 +19,7 @@ export interface Slide {
   styleUrls: ['./hero-slider.component.scss'],
 })
 export class HeroSliderComponent implements AfterViewInit, OnDestroy {
-  @Input() slides: Slide[] = [];
+  @Input() slides: ProjectDTO[] = [];
   @ViewChild('emblaRef') emblaRef!: ElementRef<HTMLElement>;
 
   readonly ChevronLeftIcon = ChevronLeft;

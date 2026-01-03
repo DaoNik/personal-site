@@ -1,6 +1,8 @@
 <section class="home-page">
   <div class="container">
-    <app-hero-slider [slides]="featuredSlides"></app-hero-slider>
+    @if (projects$ | async; as projects) {
+    <app-hero-slider [slides]="projects"></app-hero-slider>
+    }
 
     <div class="intro-section">
       <div class="intro-content">
@@ -11,7 +13,7 @@
           <h1 class="intro-greeting">Привет, меня зовут Никита</h1>
           <p class="intro-bio">
             Веб-разработчик, создающий осознанные цифровые опыты, которые
-            почитают простоту, ясность и естественный мир.
+            почитают простоту, ясность и удобство.
           </p>
           <div class="intro-actions">
             <a routerLink="/work" class="btn-natural btn-primary btn-with-icon">
@@ -32,8 +34,8 @@
     <div class="stats-section">
       <div class="stats-grid">
         <lib-stats-card
-          value="12+"
-          label="Системы проектирования"
+          value="3+"
+          label="Систем спроектировано"
           icon="layers"
         ></lib-stats-card>
         <lib-stats-card
@@ -42,8 +44,8 @@
           icon="coffee"
         ></lib-stats-card>
         <lib-stats-card
-          value="24"
-          label="Цифровые продукты"
+          value="20+"
+          label="Создано цифровых продуктов"
           icon="smartphone"
         ></lib-stats-card>
       </div>
@@ -56,13 +58,13 @@
       </div>
 
       <div class="blog-grid">
-        @for (log of latestLogs; track log) {
+        @for (blog of latestPosts$ | async; track blog) {
         <div class="blog-card natural-card">
           <div class="blog-meta">
-            <span class="blog-date">{{ log.date }}</span>
-            <span class="blog-tag">{{ log.tag }}</span>
+            <span class="blog-date">{{ blog.date }}</span>
+            <span class="blog-tag">{{ blog.category }}</span>
           </div>
-          <h3 class="blog-title">{{ log.title }}</h3>
+          <h3 class="blog-title">{{ blog.title }}</h3>
         </div>
         }
       </div>
